@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import HeroSection from './components/HeroSection';
+import LifestyleCards from './components/LifestyleCards';
+import TechExperience from './components/TechExperience';
+import ExtraordinaryExperiences from './components/ExtraordinaryExperiences';
+import FeaturesGrid from './components/FeaturesGrid';
+import HostDashboard from './components/HostDashboard';
 
 function App() {
+  const [isHost, setIsHost] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header isHost={isHost} setIsHost={setIsHost} />
+      {isHost ? (
+        <HostDashboard />
+      ) : (
+        <>
+          <HeroSection />
+          <LifestyleCards />
+          <TechExperience />
+          <ExtraordinaryExperiences />
+          <FeaturesGrid />
+        </>
+      )}
     </div>
   );
 }
