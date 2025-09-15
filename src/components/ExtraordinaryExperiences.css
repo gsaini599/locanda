@@ -31,21 +31,33 @@
 }
 
 .saudi-hospitality {
-  background: linear-gradient(135deg, #fff8e1 0%, #f5f5dc 100%);
-  background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="floor2" x1="0%" y1="100%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23daa520"/><stop offset="100%" style="stop-color:%23b8860b"/></linearGradient></defs><rect width="800" height="600" fill="%23fff8e1"/><rect x="0" y="520" width="800" height="80" fill="url(%23floor2)"/><rect x="50" y="100" width="350" height="300" fill="%23ffffff" stroke="%23daa520" stroke-width="3" rx="20"/><rect x="80" y="140" width="140" height="100" fill="%23cd853f" rx="10"/><rect x="240" y="140" width="140" height="100" fill="%23f4d03f" rx="10"/><rect x="80" y="260" width="290" height="120" fill="%23fff8dc" rx="10"/><rect x="450" y="150" width="300" height="250" fill="%23f0f8ff" stroke="%23006c35" stroke-width="3" rx="20"/><rect x="480" y="190" width="120" height="170" fill="%23228b22" rx="10"/><rect x="620" y="190" width="110" height="80" fill="%23ffd700" rx="8"/><rect x="620" y="290" width="110" height="80" fill="%23ff6347" rx="8"/></svg>');
+  background: 
+    linear-gradient(135deg, rgba(255, 248, 225, 1) 0%, rgba(245, 245, 220, 1) 100%), /* 100% opaque gradient */
+    url(../Resources/cusine.jpg); /* Your image is now completely covered */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
 }
 
 .concierge-services {
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="marble2" x1="0%" y1="100%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23495057"/><stop offset="100%" style="stop-color:%236c757d"/></linearGradient></defs><rect width="800" height="600" fill="%23f8f9fa"/><rect x="0" y="520" width="800" height="80" fill="url(%23marble2)"/><rect x="80" y="80" width="320" height="280" fill="%23ffffff" stroke="%23495057" stroke-width="3" rx="15"/><rect x="110" y="120" width="130" height="90" fill="%232c3e50" rx="8"/><rect x="250" y="120" width="130" height="90" fill="%233498db" rx="8"/><rect x="110" y="230" width="260" height="110" fill="%23ecf0f1" rx="8"/><rect x="450" y="120" width="280" height="240" fill="%23fff" stroke="%236c757d" stroke-width="3" rx="15"/><rect x="480" y="160" width="110" height="160" fill="%23f39c12" rx="8"/><rect x="600" y="160" width="110" height="75" fill="%23e74c3c" rx="6"/><rect x="600" y="245" width="110" height="75" fill="%2327ae60" rx="6"/></svg>');
+  background: 
+    linear-gradient(135deg, rgba(248, 249, 250, 0.5) 0%, rgba(233, 236, 239, 0.5) 100%), /* Optional: Keep a semi-transparent gradient overlay */
+    url(../Resources/event-planing.jpg); /* Your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat; 
 }
 
 .wellness-recreation {
-  background: linear-gradient(135deg, #f0fff0 0%, #e8f5e8 100%);
-  background-image: 
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><defs><linearGradient id="grass1" x1="0%" y1="100%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%2327ae60"/><stop offset="100%" style="stop-color:%232ecc71"/></linearGradient></defs><rect width="800" height="600" fill="%23f0fff0"/><rect x="0" y="520" width="800" height="80" fill="url(%23grass1)"/><rect x="60" y="60" width="340" height="320" fill="%23ffffff" stroke="%2327ae60" stroke-width="3" rx="18"/><rect x="90" y="100" width="140" height="120" fill="%2395e1d3" rx="10"/><rect x="240" y="100" width="140" height="120" fill="%234ecdc4" rx="10"/><rect x="90" y="240" width="280" height="120" fill="%23ffe66d" rx="10"/><rect x="450" y="100" width="290" height="280" fill="%23fff" stroke="%232ecc71" stroke-width="3" rx="18"/><rect x="480" y="140" width="120" height="200" fill="%23a8e6cf" rx="10"/><rect x="610" y="140" width="110" height="90" fill="%23f38ba8" rx="8"/><rect x="610" y="250" width="110" height="90" fill="%2395e1d3" rx="8"/></svg>');
+  background: 
+    linear-gradient(135deg, rgba(240, 255, 240, 0.5) 0%, rgba(232, 245, 232, 0.5) 100%), /* Optional: Keep a semi-transparent gradient overlay */
+    url(../Resources/spa.jpg); /* Your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
 }
 
 .image-overlay {

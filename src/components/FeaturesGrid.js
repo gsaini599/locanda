@@ -8,28 +8,24 @@ const FeaturesGrid = () => {
       title: 'Hand-picked homes',
       description: 'Only the best apartments, buildings, and neighborhoods in the world',
       image: 'handpicked-homes',
-      icon: '🏠'
     },
     {
       id: 'movein',
       title: 'Move-in ready',
       description: 'Beautifully furnished and curated spaces that are fully equipped from day one',
       image: 'movein-ready',
-      icon: '✨'
     },
     {
       id: 'flexible',
       title: 'Flexible terms',
       description: 'Modern leases so you can move in rent and out easily, no month-to-month fees',
       image: 'flexible-terms',
-      icon: '📅'
     },
     {
       id: 'service',
       title: 'High-touch service',
       description: 'Reliable support and concierge quality service throughout your stay',
       image: 'high-service',
-      icon: '🤝'
     }
   ];
 
