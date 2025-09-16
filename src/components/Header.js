@@ -10,17 +10,13 @@ const Header = ({ isHost, setIsHost }) => {
     <header className="header">
       <div className="container">
         <div className="header-content">
-          <div className="logo">
+          <a href="/" className="logo">
             <div className="logo-icon">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <rect width="32" height="32" rx="8" fill="var(--saudi-green)"/>
-                <path d="M8 12h16v8H8z" fill="var(--saudi-white)"/>
-                <path d="M12 8h8v4h-8z" fill="var(--saudi-gold)"/>
-                <path d="M10 20h12v4H10z" fill="var(--saudi-gold)"/>
               </svg>
             </div>
             <span className="logo-text">LOCANDA</span>
-          </div>
+          </a>
           
           <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
             {!isHost ? (

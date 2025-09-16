@@ -1,5 +1,5 @@
 .header {
-  background: var(--saudi-white);
+  background: var(--white);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -32,7 +32,7 @@
 .logo-text {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--saudi-green);
+  color: var(--ocean-blue);
   letter-spacing: 0.5px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .nav-link:hover {
-  color: var(--saudi-green);
+  color: var(--ocean-blue);
 }
 
 .nav-link::after {
@@ -64,7 +64,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--saudi-green);
+  background-color: var(--ocean-blue);
   transition: width 0.3s ease;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .language-selector:hover {
-  background-color: var(--saudi-light-green);
+  background-color: var(--sky-blue);
 }
 
 .language-current {
@@ -118,7 +118,7 @@
 /* Mode Toggle */
 .mode-toggle {
   display: flex;
-  background: var(--saudi-light-green);
+  background: var(--sky-blue);
   border-radius: 25px;
   padding: 4px;
   gap: 2px;
@@ -134,13 +134,13 @@
   cursor: pointer;
   transition: all 0.3s ease;
   background: transparent;
-  color: var(--saudi-green);
+  color: var(--ocean-blue);
 }
 
 .toggle-btn.active {
-  background: var(--saudi-green);
-  color: var(--saudi-white);
-  box-shadow: 0 2px 8px rgba(0, 108, 53, 0.3);
+  background: var(--ocean-blue);
+  color: var(--white);
+  box-shadow: 0 2px 8px rgba(0, 119, 190, 0.3);
 }
 
 /* Profile Section */
@@ -170,7 +170,7 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem 1rem;
-  background: var(--saudi-white);
+  background: var(--white);
   border: 1px solid var(--border-light);
   border-radius: 25px;
   cursor: pointer;
@@ -179,19 +179,19 @@
 }
 
 .profile-trigger:hover {
-  background: var(--saudi-light-green);
-  border-color: var(--saudi-green);
+  background: var(--sky-blue);
+  border-color: var(--ocean-blue);
 }
 
 .profile-avatar {
   width: 32px;
   height: 32px;
-  background: var(--saudi-green);
+  background: var(--ocean-blue);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--saudi-white);
+  color: var(--white);
 }
 
 .profile-avatar.large {
@@ -210,7 +210,7 @@
   top: 100%;
   right: 0;
   width: 320px;
-  background: var(--saudi-white);
+  background: var(--white);
   border-radius: 16px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   border: 1px solid var(--border-light);
@@ -221,7 +221,7 @@
 
 .profile-header {
   padding: 1.5rem;
-  background: linear-gradient(135deg, var(--saudi-light-green) 0%, rgba(255, 215, 0, 0.1) 100%);
+  background: linear-gradient(135deg, var(--sky-blue) 0%, rgba(135, 206, 235, 0.1) 100%);
   border-bottom: 1px solid var(--border-light);
 }
 
@@ -264,8 +264,8 @@
 }
 
 .profile-menu-item:hover {
-  background: var(--saudi-light-green);
-  color: var(--saudi-green);
+  background: var(--sky-blue);
+  color: var(--ocean-blue);
 }
 
 .profile-menu-item.logout {
@@ -313,7 +313,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--saudi-white);
+    background: var(--white);
     flex-direction: column;
     gap: 1rem;
     padding: 2rem;
