@@ -1,20 +1,20 @@
-/* Ocean Blue themed color palette */
+/* Dark Navy Blue themed color palette */
 :root {
-  --ocean-blue: #0077BE;
-  --dark-blue: #003F7F;
-  --light-blue: #87CEEB;
-  --sea-blue: #006994;
-  --navy-blue: #1E3A8A;
-  --sky-blue: #E0F4FF;
+  --primary-navy: #0f194c;
+  --dark-navy: #0a1238;
+  --light-navy: #1a2759;
+  --accent-navy: #243066;
+  --navy-blue: #2d3a73;
+  --sky-blue: #f0f2ff;
   --white: #FFFFFF;
-  --accent-blue: #4A90E2;
-  --text-dark: #1E293B;
+  --accent-blue: #3d4f80;
+  --text-dark: #0f194c;
   --text-light: #64748B;
   --border-light: #E2E8F0;
-  --shadow: 0 4px 6px rgba(0, 119, 190, 0.1);
-  --shadow-hover: 0 8px 25px rgba(0, 119, 190, 0.15);
-  --gradient-primary: linear-gradient(135deg, #0077BE 0%, #4A90E2 50%, #87CEEB 100%);
-  --gradient-secondary: linear-gradient(135deg, #E0F4FF 0%, #87CEEB 100%);
+  --shadow: 0 4px 6px rgba(15, 25, 76, 0.1);
+  --shadow-hover: 0 8px 25px rgba(15, 25, 76, 0.15);
+  --gradient-primary: linear-gradient(135deg, #0f194c 0%, #243066 50%, #3d4f80 100%);
+  --gradient-secondary: linear-gradient(135deg, #f0f2ff 0%, #e6eaff 100%);
   --glassmorphism: rgba(255, 255, 255, 0.1);
 }
 
@@ -28,7 +28,7 @@ body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   line-height: 1.6;
   color: var(--text-dark);
-  background: linear-gradient(135deg, #f8faff 0%, #e8f4fd 100%);
+  background: linear-gradient(135deg, #f8faff 0%, #f0f2ff 100%);
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -121,7 +121,7 @@ p {
   letter-spacing: 0.02em;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 119, 190, 0.2);
+  box-shadow: 0 4px 15px rgba(15, 25, 76, 0.2);
 }
 
 .btn-primary {
@@ -133,18 +133,18 @@ p {
 
 .btn-primary:hover {
   transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 15px 35px rgba(0, 119, 190, 0.4), 0 5px 15px rgba(0, 119, 190, 0.2);
+  box-shadow: 0 15px 35px rgba(15, 25, 76, 0.4), 0 5px 15px rgba(15, 25, 76, 0.2);
   animation-duration: 1.5s;
 }
 
 .btn-outline {
   background-color: transparent;
-  color: var(--ocean-blue);
-  border: 2px solid var(--ocean-blue);
+  color: var(--primary-navy);
+  border: 2px solid var(--primary-navy);
 }
 
 .btn-outline:hover {
-  background-color: var(--ocean-blue);
+  background-color: var(--primary-navy);
   color: var(--white);
 }
 
@@ -189,7 +189,7 @@ p {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 119, 190, 0.1);
+  box-shadow: 0 8px 32px rgba(15, 25, 76, 0.1);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -198,8 +198,8 @@ p {
 
 .card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 60px rgba(0, 119, 190, 0.3), 0 10px 30px rgba(0, 119, 190, 0.2);
-  border: 1px solid rgba(0, 119, 190, 0.3);
+  box-shadow: 0 20px 60px rgba(15, 25, 76, 0.3), 0 10px 30px rgba(15, 25, 76, 0.2);
+  border: 1px solid rgba(15, 25, 76, 0.3);
 }
 
 .card-body {
@@ -276,5 +276,5 @@ p {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 119, 190, 0.1);
+  box-shadow: 0 8px 32px rgba(15, 25, 76, 0.1);
 }
