@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
+import locandaLogo from '../Resources/locanda-logo.png';
 
 const Header = ({ isHost, setIsHost }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,8 +13,7 @@ const Header = ({ isHost, setIsHost }) => {
         <div className="header-content">
           <a href="/" className="logo">
             <div className="logo-icon">
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              </svg>
+              <img src={locandaLogo} alt="Locanda logo" />
             </div>
             <span className="logo-text">LOCANDA</span>
           </a>
