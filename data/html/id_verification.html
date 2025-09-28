@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airbnb User Data</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap table -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" >
+    <link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+          pre {
+            max-height: 250px;
+          }
+          .subTableCell {
+            padding-left: 30px !important;
+            border-right: none;
+            border-left: none;
+          }
+          .table td {
+            max-width: 200px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF5A5F;">
+        <div class="container">
+          <a class="navbar-brand" href="../readme.html">Your Airbnb Data</a>
+        </div>
+      </nav>
+      <div class="container" style="background-color: white;">
+        <ol class="breadcrumb">
+          <li class="navbar-brand breadcrumb-item" style="padding-left: 20px"><a href="../readme.html">Home</a></li>
+          <li class="navbar-brand breadcrumb-item active">ID Verification</li>
+        </ol>
+      </div>
+    </div>
+    <div class="container my-5 pt-5" id="root">
+      <div class="col-lg-12 px-0">
+        <h1 id="title">ID Verification</h1>
+        <p id="subtitle" class="fs-5">Information about Identity proof/documents you provided to Airbnb</p>
+        <hr class="col-12 my-4">
+            <h2>Government Ids</h2>
+            <table
+              data-toggle="table"
+              data-search="true"
+              data-locale="en-US"
+              data-show-toggle="true"
+              data-show-fullscreen="true"
+              data-show-columns="true"
+              data-show-columns-toggle-all="true"
+              data-show-export="true"
+              data-minimum-count-columns="2"
+              data-pagination="true"
+              data-page-list="[25, 50, 100, all]"
+              data-toolbar="#toolbar">
+                  <thead>
+                    <tr>
+                         <th>Document Images</th>
+                         <th>Document Expiration Date</th>
+                         <th>Document Last Name</th>
+                         <th>Document Gender</th>
+                         <th>Document Type</th>
+                         <th>Document Issuing Country</th>
+                         <th>Document First Name</th>
+                         <th>Document Birth Date</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                      <tr>
+                          <td><pre>See subtable below</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>GHANSIYAL</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>ID_CARD</pre></td>
+                          <td><pre>IN</pre></td>
+                          <td><pre>ANKIT</pre></td>
+                          <td><pre>1988-07-03</pre></td>
+                      </tr>
+                          <tr>
+                            <td class="subTableCell" colspan="3" style="min-width: 630px">
+                              <h4>Document Images</h4>
+                              <table class="table table-bordered" style="background-color: #e9ecef50; min-width: 600px">
+                                <thead>
+                                  <tr>
+                                       <th><div class="th-inner">Created At</div></th>
+                                       <th><div class="th-inner">Name</div></th>
+                                       <th><div class="th-inner">File Type</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><pre>1757776558.000000000</pre></td>
+                                        <td><pre>government_id_result_350563480_0</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td><pre>1757776558.000000000</pre></td>
+                                        <td><pre>government_id_result_350563480_1</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                      <tr>
+                          <td><pre>See subtable below</pre></td>
+                          <td><pre>2026-12-27</pre></td>
+                          <td><pre>GHANSIYAL</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>DRIVING_LICENSE</pre></td>
+                          <td><pre>IN</pre></td>
+                          <td><pre>ANKIT</pre></td>
+                          <td><pre>1988-07-03</pre></td>
+                      </tr>
+                          <tr>
+                            <td class="subTableCell" colspan="3" style="min-width: 630px">
+                              <h4>Document Images</h4>
+                              <table class="table table-bordered" style="background-color: #e9ecef50; min-width: 600px">
+                                <thead>
+                                  <tr>
+                                       <th><div class="th-inner">Created At</div></th>
+                                       <th><div class="th-inner">Name</div></th>
+                                       <th><div class="th-inner">File Type</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><pre>1757776558.000000000</pre></td>
+                                        <td><pre>government_id_result_349147655_0</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td><pre>1757776559.000000000</pre></td>
+                                        <td><pre>government_id_result_349147655_1</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                      <tr>
+                          <td><pre>[{"name":"government_id_result_349215433_0","fileType":"JPEG","createdAt":1757776559.000000000}]</pre></td>
+                          <td><pre>2029-11-11</pre></td>
+                          <td><pre>MADKOUR</pre></td>
+                          <td><pre>male</pre></td>
+                          <td><pre>PASSPORT</pre></td>
+                          <td><pre>EG</pre></td>
+                          <td><pre>MOHAMMED REDA MOHAMMED ATTIA</pre></td>
+                          <td><pre>1996-03-01</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>See subtable below</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>GHANSIYAL</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>ID_CARD</pre></td>
+                          <td><pre>IN</pre></td>
+                          <td><pre>ANKIT</pre></td>
+                          <td><pre>1988-07-03</pre></td>
+                      </tr>
+                          <tr>
+                            <td class="subTableCell" colspan="3" style="min-width: 630px">
+                              <h4>Document Images</h4>
+                              <table class="table table-bordered" style="background-color: #e9ecef50; min-width: 600px">
+                                <thead>
+                                  <tr>
+                                       <th><div class="th-inner">Created At</div></th>
+                                       <th><div class="th-inner">Name</div></th>
+                                       <th><div class="th-inner">File Type</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><pre>1757776559.000000000</pre></td>
+                                        <td><pre>government_id_result_349143872_0</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td><pre>1757776559.000000000</pre></td>
+                                        <td><pre>government_id_result_349143872_1</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                      <tr>
+                          <td><pre>See subtable below</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>IN</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                      </tr>
+                          <tr>
+                            <td class="subTableCell" colspan="3" style="min-width: 630px">
+                              <h4>Document Images</h4>
+                              <table class="table table-bordered" style="background-color: #e9ecef50; min-width: 600px">
+                                <thead>
+                                  <tr>
+                                       <th><div class="th-inner">Created At</div></th>
+                                       <th><div class="th-inner">Name</div></th>
+                                       <th><div class="th-inner">File Type</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><pre>1757776560.000000000</pre></td>
+                                        <td><pre>government_id_result_349143836_0</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td><pre>1757776560.000000000</pre></td>
+                                        <td><pre>government_id_result_349143836_1</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                      <tr>
+                          <td><pre>See subtable below</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>DRIVING_LICENSE</pre></td>
+                          <td><pre>IN</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre></pre></td>
+                      </tr>
+                          <tr>
+                            <td class="subTableCell" colspan="3" style="min-width: 630px">
+                              <h4>Document Images</h4>
+                              <table class="table table-bordered" style="background-color: #e9ecef50; min-width: 600px">
+                                <thead>
+                                  <tr>
+                                       <th><div class="th-inner">Created At</div></th>
+                                       <th><div class="th-inner">Name</div></th>
+                                       <th><div class="th-inner">File Type</div></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><pre>1757776560.000000000</pre></td>
+                                        <td><pre>government_id_result_350562967_0</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                    <tr>
+                                        <td><pre>1757776560.000000000</pre></td>
+                                        <td><pre>government_id_result_350562967_1</pre></td>
+                                        <td><pre>JPEG</pre></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                </tbody>
+            </table>
+            <h2>User Selfies</h2>
+            <table
+              data-toggle="table"
+              data-search="true"
+              data-locale="en-US"
+              data-show-toggle="true"
+              data-show-fullscreen="true"
+              data-show-columns="true"
+              data-show-columns-toggle-all="true"
+              data-show-export="true"
+              data-minimum-count-columns="2"
+              data-pagination="true"
+              data-page-list="[25, 50, 100, all]"
+              data-toolbar="#toolbar">
+                  <thead>
+                    <tr>
+                         <th>Created At</th>
+                         <th>Name</th>
+                         <th>File Type</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                      <tr>
+                          <td><pre>1757776560.000000000</pre></td>
+                          <td><pre>user_selfy_418930354</pre></td>
+                          <td><pre>JPEG</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>1757776560.000000000</pre></td>
+                          <td><pre>user_selfy_418930355</pre></td>
+                          <td><pre>JPEG</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>1757776560.000000000</pre></td>
+                          <td><pre>user_selfy_418930356</pre></td>
+                          <td><pre>JPEG</pre></td>
+                      </tr>
+                </tbody>
+            </table>
+      </div>
+    </div>
+    <script>
+      // Reformat all PRE's to format JSON
+      document.querySelectorAll("pre").forEach(pre => {try { pre.innerHTML = JSON.stringify(JSON.parse(pre.innerHTML), undefined, 2) } catch (e) {}});
+    </script>
+  </body>
+</html>

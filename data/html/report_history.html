@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airbnb User Data</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap table -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" >
+    <link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+          pre {
+            max-height: 250px;
+          }
+          .subTableCell {
+            padding-left: 30px !important;
+            border-right: none;
+            border-left: none;
+          }
+          .table td {
+            max-width: 200px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF5A5F;">
+        <div class="container">
+          <a class="navbar-brand" href="../readme.html">Your Airbnb Data</a>
+        </div>
+      </nav>
+      <div class="container" style="background-color: white;">
+        <ol class="breadcrumb">
+          <li class="navbar-brand breadcrumb-item" style="padding-left: 20px"><a href="../readme.html">Home</a></li>
+          <li class="navbar-brand breadcrumb-item active">Report History</li>
+        </ol>
+      </div>
+    </div>
+    <div class="container my-5 pt-5" id="root">
+      <div class="col-lg-12 px-0">
+        <h1 id="title">Report History</h1>
+        <p id="subtitle" class="fs-5">History of the listings, profiles, or message threads you have reported to Airbnb</p>
+        <hr class="col-12 my-4">
+            <h2>User Flags</h2>
+            <table
+              data-toggle="table"
+              data-search="true"
+              data-locale="en-US"
+              data-show-toggle="true"
+              data-show-fullscreen="true"
+              data-show-columns="true"
+              data-show-columns-toggle-all="true"
+              data-show-export="true"
+              data-minimum-count-columns="2"
+              data-pagination="true"
+              data-page-list="[25, 50, 100, all]"
+              data-toolbar="#toolbar">
+                  <thead>
+                    <tr>
+                         <th>Flaggable Id</th>
+                         <th>Created At</th>
+                         <th>Flagging User Id</th>
+                         <th>Flaggable Type</th>
+                         <th>Name</th>
+                         <th>Flagged User Id</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                      <tr>
+                          <td><pre>2258212771</pre></td>
+                          <td><pre>2025-08-10T21:15:48.000Z</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>Thread</pre></td>
+                          <td><pre>Dismiss suspicious message education</pre></td>
+                          <td><pre>525065567</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2259900453</pre></td>
+                          <td><pre>2025-08-12T02:05:28.000Z</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>Thread</pre></td>
+                          <td><pre>Dismiss suspicious message education</pre></td>
+                          <td><pre>687868587</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2281655326</pre></td>
+                          <td><pre>2025-09-01T22:05:55.000Z</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>Thread</pre></td>
+                          <td><pre>Dismiss suspicious message education</pre></td>
+                          <td><pre>492521674</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2282415428</pre></td>
+                          <td><pre>2025-09-02T17:46:48.000Z</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>Thread</pre></td>
+                          <td><pre>Dismiss suspicious message education</pre></td>
+                          <td><pre>588917425</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2284098102</pre></td>
+                          <td><pre>2025-09-04T12:17:41.000Z</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>Thread</pre></td>
+                          <td><pre>Dismiss suspicious message education</pre></td>
+                          <td><pre>549882135</pre></td>
+                      </tr>
+                </tbody>
+            </table>
+      </div>
+    </div>
+    <script>
+      // Reformat all PRE's to format JSON
+      document.querySelectorAll("pre").forEach(pre => {try { pre.innerHTML = JSON.stringify(JSON.parse(pre.innerHTML), undefined, 2) } catch (e) {}});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airbnb User Data</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap table -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" >
+    <link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+          pre {
+            max-height: 250px;
+          }
+          .subTableCell {
+            padding-left: 30px !important;
+            border-right: none;
+            border-left: none;
+          }
+          .table td {
+            max-width: 200px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF5A5F;">
+        <div class="container">
+          <a class="navbar-brand" href="../readme.html">Your Airbnb Data</a>
+        </div>
+      </nav>
+      <div class="container" style="background-color: white;">
+        <ol class="breadcrumb">
+          <li class="navbar-brand breadcrumb-item" style="padding-left: 20px"><a href="../readme.html">Home</a></li>
+          <li class="navbar-brand breadcrumb-item active">Payment Processing</li>
+        </ol>
+      </div>
+    </div>
+    <div class="container my-5 pt-5" id="root">
+      <div class="col-lg-12 px-0">
+        <h1 id="title">Payment Processing</h1>
+        <p id="subtitle" class="fs-5">Payments being processed</p>
+        <hr class="col-12 my-4">
+            <h2>Transaction Details</h2>
+            <table
+              data-toggle="table"
+              data-search="true"
+              data-locale="en-US"
+              data-show-toggle="true"
+              data-show-fullscreen="true"
+              data-show-columns="true"
+              data-show-columns-toggle-all="true"
+              data-show-export="true"
+              data-minimum-count-columns="2"
+              data-pagination="true"
+              data-page-list="[25, 50, 100, all]"
+              data-toolbar="#toolbar">
+                  <thead>
+                    <tr>
+                         <th>Amount Micros</th>
+                         <th>Currency</th>
+                         <th>Additional Attributes</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                      <tr>
+                          <td><pre>387800000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"0119c0c7-907b-f011-b585-005056b65217"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>387800000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>387800000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"4419c0c7-907b-f011-b585-005056b65217","epacsReference":"3519c0c7-907b-f011-b585-005056b65217","appliedCurrency":"USD","appliedAmount":387.8}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>387800000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zXMDKGPhsQ6VJXyg553XzBr0","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"387.80","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"4419c0c7-907b-f011-b585-005056b65217","Reference":"AIRBNB","Original Amount":"","Date":"17/08/2025 17:37:08","AccountNumber":"0003450000000003","paymentRef":"0GG0zXMDKGPhsQ6VJXyg553XzBr0","Item No.":"13057464","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"19748156.68"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>379720000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>379720000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"9ef6c33b-747e-f011-b585-005056b65217"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>379720000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"b2f6c33b-747e-f011-b585-005056b65217","epacsReference":"a4f6c33b-747e-f011-b585-005056b65217","appliedCurrency":"USD","appliedAmount":379.72}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>379720000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zZxEHNwCTINZImauyjUMUIF","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"379.72","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"b2f6c33b-747e-f011-b585-005056b65217","Reference":"AIRBNB","Original Amount":"","Date":"21/08/2025 09:50:20","AccountNumber":"0003450000000003","paymentRef":"0GG0zZxEHNwCTINZImauyjUMUIF","Item No.":"13093505","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"36809405.26"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>188980000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"c496dad5-9881-f011-b585-005056b65217"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>188980000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>188980000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"2697dad5-9881-f011-b585-005056b65217","epacsReference":"0297dad5-9881-f011-b585-005056b65217","appliedCurrency":"USD","appliedAmount":188.98}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>188980000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zXC3rO7FLAJxHH2YwQz07yE0","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"188.98","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"2697dad5-9881-f011-b585-005056b65217","Reference":"AIRBNB","Original Amount":"","Date":"25/08/2025 09:49:53","AccountNumber":"0003450000000003","paymentRef":"0GG0zXC3rO7FLAJxHH2YwQz07yE0","Item No.":"13138246","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"17359062.40"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>284790000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>284790000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"b54e535c-f483-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>284790000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"db4e535c-f483-f011-b587-005056b6a8ad","epacsReference":"c24e535c-f483-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":284.79}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>317130000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>317130000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"98f2408f-bd84-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>317130000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"11f3408f-bd84-f011-b587-005056b6a8ad","epacsReference":"d2f2408f-bd84-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":317.13}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>284790000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zbSr1Cb3Y26Gp7HeVqOzxMC","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"284.79","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"db4e535c-f483-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"28/08/2025 09:50:07","AccountNumber":"0003450000000003","paymentRef":"0GG0zbSr1Cb3Y26Gp7HeVqOzxMC","Item No.":"13163255","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"36069820.32"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>317130000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zdFa4PaWN2GBnzfM7FcYCbb","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"317.13","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"11f3408f-bd84-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"29/08/2025 09:50:24","AccountNumber":"0003450000000003","paymentRef":"0GG0zdFa4PaWN2GBnzfM7FcYCbb","Item No.":"13172112","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"31964211.13"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>331090000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>331090000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"7447d9cf-4f86-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>331090000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"9547d9cf-4f86-f011-b587-005056b6a8ad","epacsReference":"8547d9cf-4f86-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":331.09}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>331090000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zdTSfny4Tb4swOtIqeuG0JD","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"331.09","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"9547d9cf-4f86-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"31/08/2025 09:49:50","AccountNumber":"0003450000000003","paymentRef":"0GG0zdTSfny4Tb4swOtIqeuG0JD","Item No.":"13194916","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"21960893.77"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>80450000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>80450000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"07490369-ab88-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>80450000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"8f490369-ab88-f011-b587-005056b6a8ad","epacsReference":"27490369-ab88-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":80.45}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>101610000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>101610000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"2f5c0e77-7489-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>85620000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>85620000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"765c0e77-7489-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>85620000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"12c0077d-7489-f011-b587-005056b6a8ad","epacsReference":"eabf077d-7489-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":85.62}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>101610000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"5e5c0e77-7489-f011-b587-005056b6a8ad","epacsReference":"445c0e77-7489-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":101.61}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>80450000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zaOYLJyF3f8gwOVcKF6BJkr","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"80.45","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"8f490369-ab88-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"03/09/2025 09:50:33","AccountNumber":"0003450000000003","paymentRef":"0GG0zaOYLJyF3f8gwOVcKF6BJkr","Item No.":"13224105","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"36319531.70"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>204660000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>204660000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"675b169c-3d8a-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>239780000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>239780000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"b75b169c-3d8a-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>239780000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"42be0ea2-3d8a-f011-b587-005056b6a8ad","epacsReference":"fcbd0ea2-3d8a-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":239.78}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>204660000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"975b169c-3d8a-f011-b587-005056b6a8ad","epacsReference":"8a5b169c-3d8a-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":204.66}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>85620000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zYp0qxsfkQTpJumzaKJZCoG","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"85.62","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"12c0077d-7489-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"04/09/2025 09:49:49","AccountNumber":"0003450000000003","paymentRef":"0GG0zYp0qxsfkQTpJumzaKJZCoG","Item No.":"13232324","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"33067537.89"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>101610000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zd5rAySx0j4oQIy6zfcX6Hz1","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"101.61","Description":"Aljawharah Abdulaziz Abdullah Alshayban","Bank":"AL RAJHI BANK","Original Currency":"","Statement ID":"5e5c0e77-7489-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"04/09/2025 09:49:46","AccountNumber":"0003450000000003","paymentRef":"0GG0zd5rAySx0j4oQIy6zfcX6Hz1","Item No.":"13232322","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"33069218.46"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>204660000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zdFsuKJRBQEfIMlPJB4ODd8","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"204.66","Description":"Aljawharah Abdulaziz Abdullah Alshayban","Bank":"AL RAJHI BANK","Original Currency":"","Statement ID":"975b169c-3d8a-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"05/09/2025 09:49:36","AccountNumber":"0003450000000003","paymentRef":"0GG0zdFsuKJRBQEfIMlPJB4ODd8","Item No.":"13241033","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"29669074.68"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>239780000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zd7ahCr8s2QeIUHnmIZmBLO","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"239.78","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"42be0ea2-3d8a-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"05/09/2025 09:49:39","AccountNumber":"0003450000000003","paymentRef":"0GG0zd7ahCr8s2QeIUHnmIZmBLO","Item No.":"13241035","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"29668652.47"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>1079380000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>139420000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>1079380000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"1d4b6436-998c-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>139420000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"1c4b6436-998c-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>139420000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"714b6436-998c-f011-b587-005056b6a8ad","epacsReference":"404b6436-998c-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":139.42}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>1079380000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"734b6436-998c-f011-b587-005056b6a8ad","epacsReference":"434b6436-998c-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":1079.38}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>1079380000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zbCgGoB27gJ6MA51XnBj3CA","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"1079.38","Description":"Aljawharah Abdulaziz Abdullah Alshayban","Bank":"AL RAJHI BANK","Original Currency":"","Statement ID":"734b6436-998c-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"08/09/2025 09:50:23","AccountNumber":"0003450000000003","paymentRef":"0GG0zbCgGoB27gJ6MA51XnBj3CA","Item No.":"13275169","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"16639804.16"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>139420000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zaey9QS3UyXFrJ0Cl03C5Pa0","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"139.42","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"714b6436-998c-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"08/09/2025 09:50:23","AccountNumber":"0003450000000003","paymentRef":"0GG0zaey9QS3UyXFrJ0Cl03C5Pa0","Item No.":"13275168","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"16640883.54"}}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>108640000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>108640000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"03d0c2b1-f48e-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>108640000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"15d0c2b1-f48e-f011-b587-005056b6a8ad","epacsReference":"09d0c2b1-f48e-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":108.64}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>178480000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"displayMerchantReference":"AIRBNB","email":"info.saudihost@gmail.com"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>178480000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"statusCode":0,"statusMessage":"Success","paymentStatusCode":0,"paymentStatusMessage":"Success","epacsReference":"de7c01dd-bd8f-f011-b587-005056b6a8ad"}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>178480000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"envoyMerchantAccountNumber":"0003450000000003","statementId":"357d01dd-bd8f-f011-b587-005056b6a8ad","epacsReference":"117d01dd-bd8f-f011-b587-005056b6a8ad","appliedCurrency":"USD","appliedAmount":178.48}</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>108640000</pre></td>
+                          <td><pre>USD</pre></td>
+                          <td><pre>{"externalReferenceToken":"0GG0zXRH1VJGsgOAodMgeJXkbF2","eventType":"PAYOUT","processor":"envoy","ibfEventPayload":{"ForEx Rate":"","Transfer Type":"BANKOUT             ","Debit":"108.64","Description":"NAJLA MOHAMMED ALMANIA","Bank":"Alinma","Original Currency":"","Statement ID":"15d0c2b1-f48e-f011-b587-005056b6a8ad","Reference":"AIRBNB","Original Amount":"","Date":"11/09/2025 09:50:15","AccountNumber":"0003450000000003","paymentRef":"0GG0zXRH1VJGsgOAodMgeJXkbF2","Item No.":"13297989","Credit":"","Merchant":"Airbnb Payments UK Ltd","Additional Info.":"","Currency":"USD","Country":"SA","Balance":"28731449.87"}}</pre></td>
+                      </tr>
+                </tbody>
+            </table>
+      </div>
+    </div>
+    <script>
+      // Reformat all PRE's to format JSON
+      document.querySelectorAll("pre").forEach(pre => {try { pre.innerHTML = JSON.stringify(JSON.parse(pre.innerHTML), undefined, 2) } catch (e) {}});
+    </script>
+  </body>
+</html>

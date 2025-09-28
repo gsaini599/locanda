@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airbnb User Data</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Bootstrap table -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" >
+    <link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/tableexport.jquery.plugin/tableExport.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table-locale-all.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.4/dist/extensions/export/bootstrap-table-export.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+          pre {
+            max-height: 250px;
+          }
+          .subTableCell {
+            padding-left: 30px !important;
+            border-right: none;
+            border-left: none;
+          }
+          .table td {
+            max-width: 200px;
+          }
+    </style>
+  </head>
+  <body>
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #FF5A5F;">
+        <div class="container">
+          <a class="navbar-brand" href="../readme.html">Your Airbnb Data</a>
+        </div>
+      </nav>
+      <div class="container" style="background-color: white;">
+        <ol class="breadcrumb">
+          <li class="navbar-brand breadcrumb-item" style="padding-left: 20px"><a href="../readme.html">Home</a></li>
+          <li class="navbar-brand breadcrumb-item active">Wishlists</li>
+        </ol>
+      </div>
+    </div>
+    <div class="container my-5 pt-5" id="root">
+      <div class="col-lg-12 px-0">
+        <h1 id="title">Wishlists</h1>
+        <p id="subtitle" class="fs-5">Information about your wishlists on Airbnb including the trip dates, the listings you added, the votes during collaboration, etc.</p>
+        <hr class="col-12 my-4">
+            <h2>Pending Wishlist Item Data</h2>
+            <table
+              data-toggle="table"
+              data-search="true"
+              data-locale="en-US"
+              data-show-toggle="true"
+              data-show-fullscreen="true"
+              data-show-columns="true"
+              data-show-columns-toggle-all="true"
+              data-show-export="true"
+              data-minimum-count-columns="2"
+              data-pagination="true"
+              data-page-list="[25, 50, 100, all]"
+              data-toolbar="#toolbar">
+                  <thead>
+                    <tr>
+                         <th>Check In</th>
+                         <th>Pdp Type</th>
+                         <th>Check Out</th>
+                         <th>User Id</th>
+                         <th>Pdp Id</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2025-09-08</pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre>2025-09-09</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1365224423602503683</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1365224423602503683</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1365224423602503683</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1493413689061177877</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2025-08-26</pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre>2025-08-27</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2025-08-16</pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre>2025-08-17</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1379851948215289523</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>2025-08-08</pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre>2025-08-09</pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre></pre></td>
+                          <td><pre>HOME</pre></td>
+                          <td><pre></pre></td>
+                          <td><pre>712370428</pre></td>
+                          <td><pre>1483452925006235232</pre></td>
+                      </tr>
+                </tbody>
+            </table>
+            <h2>Proactive Wishlist User State Data</h2>
+            <table
+              data-toggle="table"
+              data-search="true"
+              data-locale="en-US"
+              data-show-toggle="true"
+              data-show-fullscreen="true"
+              data-show-columns="true"
+              data-show-columns-toggle-all="true"
+              data-show-export="true"
+              data-minimum-count-columns="2"
+              data-pagination="true"
+              data-page-list="[25, 50, 100, all]"
+              data-toolbar="#toolbar">
+                  <thead>
+                    <tr>
+                         <th>User Id</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                      <tr>
+                          <td><pre>712370428</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>712370428</pre></td>
+                      </tr>
+                      <tr>
+                          <td><pre>712370428</pre></td>
+                      </tr>
+                </tbody>
+            </table>
+      </div>
+    </div>
+    <script>
+      // Reformat all PRE's to format JSON
+      document.querySelectorAll("pre").forEach(pre => {try { pre.innerHTML = JSON.stringify(JSON.parse(pre.innerHTML), undefined, 2) } catch (e) {}});
+    </script>
+  </body>
+</html>
