@@ -1,0 +1,175 @@
+.ld-section { padding: 0 0 60px; }
+
+/* Hero */
+.ld-hero-wrap { position: relative; height: 360px; overflow: hidden; }
+.ld-hero-img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ld-hero-overlay { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,18,56,0.25) 0%, rgba(10,18,56,0.65) 70%); }
+.ld-hero-content { position: absolute; left: 0; right: 0; bottom: 30px; color: white; }
+.ld-breadcrumbs { display: flex; gap: 0.5rem; color: rgba(255,255,255,0.8); margin-bottom: 0.5rem; font-size: 0.9rem; }
+.ld-breadcrumbs span[role="button"] { cursor: pointer; text-decoration: underline; }
+.ld-hero-title { font-family: 'Playfair Display', serif; font-size: 2.25rem; margin: 0.25rem 0; text-shadow: 0 4px 20px rgba(0,0,0,0.35); }
+.ld-hero-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.badge { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.35); backdrop-filter: blur(6px); color: white; padding: 0.35rem 0.7rem; border-radius: 999px; font-weight: 600; font-size: 0.85rem; }
+
+/* Layout */
+.ld-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin-top: 2rem; }
+.ld-main { display: grid; gap: 1.5rem; }
+.ld-aside { position: sticky; top: 90px; height: fit-content; }
+
+/* Cards */
+.ld-section-card { background: var(--white); border-radius: 16px; box-shadow: 0 12px 35px rgba(15,25,76,0.12); border: 1px solid rgba(15,25,76,0.08); padding: 1.5rem; }
+.ld-section-card h3 { color: var(--primary-navy); margin-bottom: 0.75rem; }
+.muted { color: var(--text-light); }
+
+/* Photo Gallery */
+.ld-photo-gallery { padding: 0; overflow: hidden; }
+.ld-gallery-header { padding: 1.5rem 1.5rem 1rem; border-bottom: 1px solid var(--border-light); }
+.ld-gallery-header h3 { margin: 0 0 1rem 0; color: var(--primary-navy); }
+
+.ld-category-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.category-tab { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; 
+  padding: 0.5rem 1rem; 
+  border: 1px solid var(--border-light); 
+  border-radius: 8px; 
+  background: var(--white); 
+  color: var(--text-light); 
+  cursor: pointer; 
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.category-tab:hover { 
+  border-color: var(--primary-navy); 
+  color: var(--primary-navy); 
+  background: var(--sky-blue);
+}
+.category-tab.active { 
+  background: var(--primary-navy); 
+  color: white; 
+  border-color: var(--primary-navy);
+}
+.category-icon { font-size: 1.1rem; }
+.category-name { white-space: nowrap; }
+
+.ld-gallery-grid { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 0.5rem; 
+  padding: 1.5rem; 
+  background: #f8f9fa;
+}
+.gallery-item { 
+  position: relative; 
+  border-radius: 12px; 
+  overflow: hidden; 
+  background: var(--white);
+  box-shadow: 0 4px 12px rgba(15,25,76,0.1);
+  transition: transform 0.2s ease;
+}
+.gallery-item:hover { transform: translateY(-2px); }
+.gallery-item.main-photo { 
+  grid-row: span 2; 
+  grid-column: span 1;
+}
+.gallery-img { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+}
+.gallery-item.main-photo .gallery-img { height: 300px; }
+.gallery-item:not(.main-photo) .gallery-img { height: 140px; }
+
+.photo-label { 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  background: linear-gradient(transparent, rgba(0,0,0,0.7)); 
+  color: white; 
+  padding: 1rem 0.75rem 0.75rem; 
+  font-weight: 600; 
+  font-size: 0.9rem;
+}
+
+.show-all-photos-btn { 
+  grid-column: span 2; 
+  padding: 1rem; 
+  background: var(--white); 
+  border: 2px dashed var(--border-light); 
+  border-radius: 12px; 
+  color: var(--primary-navy); 
+  font-weight: 600; 
+  cursor: pointer; 
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.show-all-photos-btn:hover { 
+  border-color: var(--primary-navy); 
+  background: var(--sky-blue);
+}
+.show-all-photos-btn::before { content: '📸'; font-size: 1.2rem; }
+
+/* Details grid */
+.ld-details-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.detail-item { background: var(--sky-blue); border-radius: 12px; padding: 0.75rem; }
+.detail-label { font-size: 0.8rem; color: var(--text-light); }
+.detail-value { font-weight: 700; color: var(--primary-navy); }
+
+/* Amenities */
+.ld-amenities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.75rem; margin-top: 0.5rem; }
+.amenity-item { display: flex; align-items: center; gap: 0.6rem; background: #F6F8FF; border: 1px solid var(--border-light); border-radius: 12px; padding: 0.6rem 0.75rem; }
+.amenity-icon { width: 28px; height: 28px; display: grid; place-items: center; background: var(--white); border-radius: 8px; box-shadow: 0 2px 8px rgba(15,25,76,0.12); }
+.amenity-text { color: var(--primary-navy); font-weight: 600; font-size: 0.9rem; }
+
+/* Booking card */
+.booking-card { background: var(--white); border: 1px solid var(--border-light); border-radius: 16px; box-shadow: 0 12px 35px rgba(15,25,76,0.12); padding: 1.25rem; display: grid; gap: 1rem; }
+.booking-price { display: flex; align-items: baseline; gap: 0.5rem; }
+.booking-price .price { font-size: 1.8rem; font-weight: 800; color: var(--primary-navy); }
+.booking-price .period { color: var(--text-light); }
+.booking-meta { color: var(--text-light); font-size: 0.9rem; }
+
+/* Map placeholder */
+.ld-map-placeholder { display: flex; align-items: center; gap: 0.75rem; background: var(--sky-blue); border: 1px solid var(--border-light); padding: 1rem; border-radius: 12px; }
+.map-pin { font-size: 1.5rem; }
+.map-title { font-weight: 700; color: var(--primary-navy); }
+
+@media (max-width: 1024px) {
+  .ld-layout { grid-template-columns: 1fr; }
+  .ld-aside { position: static; }
+}
+
+@media (max-width: 768px) {
+  .ld-hero-wrap { height: 260px; }
+  
+  .ld-gallery-grid { 
+    grid-template-columns: 1fr; 
+    gap: 0.75rem; 
+    padding: 1rem;
+  }
+  .gallery-item.main-photo { 
+    grid-row: span 1; 
+    grid-column: span 1;
+  }
+  .gallery-item.main-photo .gallery-img { height: 200px; }
+  .gallery-item:not(.main-photo) .gallery-img { height: 120px; }
+  
+  .ld-category-tabs { 
+    gap: 0.25rem; 
+    overflow-x: auto; 
+    padding-bottom: 0.5rem;
+  }
+  .category-tab { 
+    padding: 0.4rem 0.8rem; 
+    font-size: 0.8rem; 
+    flex-shrink: 0;
+  }
+  .category-name { display: none; }
+  .category-icon { font-size: 1.2rem; }
+}

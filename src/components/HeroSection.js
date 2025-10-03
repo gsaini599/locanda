@@ -15,8 +15,9 @@ const HeroSection = () => {
   };
 
   const handleSearch = () => {
-    console.log('Searching for:', searchData);
-    // Handle search logic here
+    const q = encodeURIComponent((searchData.where || '').trim());
+    window.location.hash = q ? `/search?q=${q}` : '/search';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
